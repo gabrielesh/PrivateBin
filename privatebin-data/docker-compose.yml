@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  privatebin:
+    image: 
+    volumes:
+      - './privatebin-data:/srv/data'
+    ports:
+      # To update: Be sure to use a reverse proxy for HTTPS termination 
+      # in front of it for production environments.
+      # ie, The Nginx setup supports only HTTP, so make sure that you run 
+      # another webserver as reverse proxy in front of this for HTTPS 
+      #offloading and reducing the attack surface on your TLS stack. The 
+      # Nginx in this image is set up to deflate/gzip text content.
+      - 8080:80
+    restart: always
