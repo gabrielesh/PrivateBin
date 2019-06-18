@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   privatebin:
-    image: privatebin/nginx-fpm-alpine:1.2.1 # or should this be :latest ?
+    image: privatebin/nginx-fpm-alpine
     read_only: true # not in compose 3.0 documentation but appears supported based
     # on issues for docker compose in Github
     volumes:
