@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   privatebin:
-    image: 
+    image: privatebin/nginx-fpm-alpine:1.2.1 # or should this be :latest ?
     volumes:
       - './privatebin-data:/srv/data'
     ports:
@@ -14,4 +14,3 @@ services:
       # Nginx in this image is set up to deflate/gzip text content.
       - 8080:80
     restart: always
-# test change
