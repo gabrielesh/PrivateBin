@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/gabrielesh/PrivateBin.svg?branch=master)](https://travis-ci.org/gabrielesh/PrivateBin)
+
 # PrivateBin Docker Container
 
 This repository contains the configuration for setting up a PrivateBin docker container using docker-compose. 
