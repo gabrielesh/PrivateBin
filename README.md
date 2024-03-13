@@ -23,15 +23,15 @@ conf.php : contains full configuration for Privatebin v1.7.5
 # To Run
 
 Run foollowing commands assuming Docker and Docker-Compose are installed and configures : 
-
+```
 $ docker compose pull
 $ docker compose up -d
-
+```
 # To Update 
 
 Run the following commands : 
-
+```
 $ docker compose down
 $ docker compose pull
 $ docker compose up -d
-
+``
