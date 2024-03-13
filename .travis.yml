@@ -1,6 +1,4 @@
 ---
-dist: xenial
-env: 
-  - HOST_PORT=8001
+dist: focal
 services: docker
 script: docker-compose up -d
