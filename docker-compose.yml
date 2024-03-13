@@ -1,6 +1,26 @@
 version: "3.7"
 
 services:
+
+#FOR MySQL Support : 
+# mariadb:
+#  image: "mariadb"
+#  container_name: "mariadb"
+#  hostname: "mariadb"
+#  restart: always
+#  env_file:
+#   - "./cfg/.env"
+#  volumes:
+#   - "mariadb_vol:/var/lib/mysql"
+#   - "/etc/localtime:/etc/localtime:ro"
+#  environment:
+#   - "MYSQL_ROOT_PASSWORD=<my-secret-pw>"
+#   - "MYSQL_PASSWORD=<vaultwarden_pw>"
+#   - "MYSQL_DATABASE=vaultwarden"
+#   - "MYSQL_USER=<vaultwarden_user>"
+
+
+
   privatebin:
     image: privatebin/nginx-fpm-alpine:latest #TAGS stable latest edge nightly 
     read_only: true # not in compose 3.0 documentation but appears supported based
