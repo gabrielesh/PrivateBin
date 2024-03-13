@@ -22,7 +22,22 @@ conf.php : contains full configuration for Privatebin v1.7.5
 
 # To Run
 
-Run foollowing commands assuming Docker and Docker-Compose are installed and configures : 
+Run foollowing commands assuming Docker and Docker-Compose are installed and configured for your user : 
+
+First, clone this repository, it will create a directory containing all needed files.
+
+```
+git clone https://github.com/gigadjo/PrivateBin.git
+```
+Then move into the PrivateBin directory that just has been created.
+```
+$ cd PrivateBin
+```
+
+Edit files according to your needs, they are located in cfg/ directory.
+
+When done, run Private Bin using Docker Compose : 
+
 ```
 $ docker compose pull
 $ docker compose up -d
