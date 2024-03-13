@@ -34,4 +34,4 @@ Run the following commands :
 $ docker compose down
 $ docker compose pull
 $ docker compose up -d
-``
+```
