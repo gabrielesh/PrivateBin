@@ -16,5 +16,5 @@ services:
       # another webserver as reverse proxy in front of this for HTTPS 
       #offloading and reducing the attack surface on your TLS stack. The 
       # Nginx in this image is set up to deflate/gzip text content.
-      - 8080:80
+      - 8080:8080
     restart: unless-stopped
