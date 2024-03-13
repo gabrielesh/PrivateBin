@@ -8,7 +8,7 @@
 ; name = "PrivateBin"
 
 ; enable or disable the discussion feature, defaults to true
-discussion = true
+discussion = false
 
 ; preselect the discussion feature, defaults to false
 opendiscussion = false
@@ -30,22 +30,22 @@ defaultformatter = "plaintext"
 ; syntaxhighlightingtheme = "sons-of-obsidian"
 
 ; size limit per paste or comment in bytes, defaults to 2 Mebibytes
-sizelimit = 4194304
+sizelimit = 14194304
 
 ; template to include, default is "bootstrap" (tpl/bootstrap.php)
 template = "bootstrap"
 
 ; (optional) notice to display
-; notice = "Note: This is a test service: Data may be deleted anytime. Kittens will die if you abuse this service."
+; notice = "Note: Les données stockées sur ce serveur, sont effacées 24H aprés leur dépot."
 
 ; by default PrivateBin will guess the visitors language based on the browsers
 ; settings. Optionally you can enable the language selection menu, which uses
 ; a session cookie to store the choice until the browser is closed.
-languageselection = false
+languageselection = true
 
 ; set the language your installs defaults to, defaults to English
 ; if this is set and language selection is disabled, this will be the only language
-; languagedefault = "en"
+languagedefault = "fr"
 
 ; (optional) URL shortener address to offer after a new paste is created
 ; it is suggested to only use this with self-hosted shorteners as this will leak
@@ -54,7 +54,7 @@ languageselection = false
 
 ; (optional) Let users create a QR code for sharing the paste URL with one click.
 ; It works both when a new paste is created and when you view a paste.
-; qrcode = true
+qrcode = true
 
 ; (optional) IP based icons are a weak mechanism to detect if a comment was from
 ; a different user when the same username was used in a comment. It might be
@@ -117,7 +117,7 @@ dir = PATH "data"
 ; minimum time limit between two purgings of expired pastes, it is only
 ; triggered when pastes are created
 ; Set this to 0 to run a purge every time a paste is created.
-limit = 300
+limit = 0
 
 ; maximum amount of expired pastes to delete in one purge
 ; Set this to 0 to disable purging. Set it higher, if you are running a large
