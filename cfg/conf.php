@@ -127,7 +127,7 @@ default = "12hour"
 1day = 86400
 2day = 172800
 1week = 604800
-; Well this is not *exactly* one month, it is 30 days
+; Well this is not *exactly* one month it is 30 days
 1month = 2592000
 1year = 31536000
 never = 0
