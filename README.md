@@ -15,6 +15,8 @@ We have taken the docker container command suggested in the PrivateBin Docker do
 Config files are located in .cnf/ directory.
 
 .env.ewample : contains tunables variables
+
+
 conf.php : contains full configuration
 
 
