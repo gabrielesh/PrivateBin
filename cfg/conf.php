@@ -141,7 +141,7 @@ markdown = "Markdown"
 [traffic]
 ; time limit between calls from the same IP address in seconds
 ; Set this to 0 to disable rate limiting.
-limit = 10
+limit = 2
 
 ; (optional) Set IPs addresses (v4 or v6) or subnets (CIDR) which are exempted
 ; from the rate-limit. Invalid IPs will be ignored. If multiple values are to
