@@ -1,4 +1,5 @@
 # Ignore everything in this directory
+*.env
 *
 
 # Except this file
