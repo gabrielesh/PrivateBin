@@ -12,16 +12,26 @@ We have taken the docker container command suggested in the PrivateBin Docker do
  docker run -d --restart="always" --read-only -p 8080:8080 -v $PWD/conf.php:/srv/cfg/conf.php:ro -v $PWD/privatebin-data:/srv/data privatebin/nginx-fpm-alpine
  ```
 ### Config Files : 
-Config files are located in .cnf/ directory.
 
-.env.ewample : contains tunables variables
+docker-compose.yml : Should be edited to fit your needs.
 
+Config file is located in .cnf/ directory.
 
-conf.php : contains full configuration
+conf.php : contains full configuration for Privatebin v1.7.5
 
 
 # To Run
-PrivateBin suggests running the Docker container in the backround using `docker-compose up -d` (-d for detached mode).
 
+Run foollowing commands assuming Docker and Docker-Compose are installed and configures : 
 
+$ docker compose pull
+$ docker compose up -d
+
+# To Update 
+
+Run the following commands : 
+
+$ docker compose down
+$ docker compose pull
+$ docker compose up -d
 
