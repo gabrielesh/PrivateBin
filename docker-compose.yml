@@ -15,16 +15,16 @@ services:
 #   - "/etc/localtime:/etc/localtime:ro"
 #  environment:
 #   - "MYSQL_ROOT_PASSWORD=<my-secret-pw>"
-#   - "MYSQL_PASSWORD=<vaultwarden_pw>"
-#   - "MYSQL_DATABASE=vaultwarden"
-#   - "MYSQL_USER=<vaultwarden_user>"
+#   - "MYSQL_PASSWORD=<mysql_user_password"
+#   - "MYSQL_DATABASE=privatebin"
+#   - "MYSQL_USER=<mysql_user>"
 
 
 
   privatebin:
     image: privatebin/nginx-fpm-alpine:latest #TAGS stable latest edge nightly 
-    read_only: true # not in compose 3.0 documentation but appears supported based
-    # on issues for docker compose in Github
+    #read_only: true # not in compose 3.0 documentation but appears supported 
+    user: 1001
     volumes:
       - './privatebin-data:/srv/data' # data volume for pastes allows pastes
       # to persist after container stop or restart
