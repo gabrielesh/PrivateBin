@@ -23,12 +23,16 @@ services:
 
   privatebin:
     image: privatebin/nginx-fpm-alpine:latest #TAGS stable latest edge nightly 
-    #read_only: true # not in compose 3.0 documentation but appears supported 
+    read_only: true # not in compose 3.0 documentation but appears supported 
     user: 1001
+    #used to force the user used to run PrivateBin (refer to docker documentation)
+    #Docker uses user 1000 by default
+    #to find your user uid run : id -u <username>
+    #replace 1001 by YOUR USER id, if different.
     volumes:
       - './privatebin-data:/srv/data' # data volume for pastes allows pastes
       # to persist after container stop or restart
-      - './cfg/conf.php:/srv/cfg/conf.php:ro' # second volume for custom configuration file
+      - './cfg/conf.php:/srv/cfg/conf.php:ro' # second volume for custom configuration file - read-only
     ports:
       # To update: Be sure to use a reverse proxy for HTTPS termination 
       # in front of it for production environments.
