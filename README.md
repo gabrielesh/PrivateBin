@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/gabrielesh/PrivateBin.svg?branch=master)](https://travis-ci.org/gabrielesh/PrivateBin)
 
 # PrivateBin Docker Container
 
@@ -14,8 +13,16 @@ We have taken the docker container command suggested in the PrivateBin Docker do
 ### Config Files : 
 
 docker-compose.yml : Should be edited to fit your needs.
+``` 
+user: 1001
+#used to force the user used to run PrivateBin (refer to docker documentation)
+#Docker uses user 1000 by default
+#to find your user uid run : id -u <username>
+#replace 1001 by YOUR USER id, if different.
+``` 
 
 Config file is located in .cnf/ directory.
+
 
 conf.php : contains full configuration for Privatebin v1.7.5
 
